@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>電卓</title>
+<link th:href="@{/css/common.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>電卓</h1>
+	<div id="culc">
+		<p th:text="${msg}"></p>
+		<form method="post" action="add">
+			<input type="text" name="in_first" >
+			<span>＋</span>
+			<input type="text" name="in_second" >
+			<input type="submit" name="reason" value="=" >
+			<input type="text" name="out" >
+		</form>
+		
+		<form method="post" action="subtraction">
+			<input type="text" name="in_first" >
+			<span>－</span>
+			<input type="text" name="in_second" >
+			<input type="submit" name="reason" value="=" >
+			<input type="text" name="out" >
+		</form>
+		
+		<form method="post" action="multiplication">
+			<input type="text" name="in_first" >
+			<span>×</span>
+			<input type="text" name="in_second" >
+			<input type="submit" name="reason" value="=" >
+			<input type="text" name="out" >
+		</form>
+		
+		<form method="post" action="division">
+			<input type="text" name="in_first" >
+			<span>÷</span>
+			<input type="text" name="in_second" >
+			<input type="submit" name="reason" value="=" >
+			<input type="text" name="out" >
+		</form>
+
+	</div>
+</body>
+</html>

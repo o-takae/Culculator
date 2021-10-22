@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>電卓</title>
+<link th:href="@{/css/common.css}" rel="stylesheet" type="text/css">
+<link th:href="@{/css/output.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>電卓</h1>
+	<div id="culc">
+		<div class="result">
+			<input type="text" name="in_first" disabled th:value="${a_culc_in_first}">
+			<span>＋</span>
+			<input type="text" name="in_second" disabled th:value="${a_culc_in_second}" >
+			<span>=</span>
+			<input type="text" name="out" th:value="${a_culc_out}">
+		</div>
+		<div class="result">
+			<input type="text" name="in_first" disabled th:value="${s_culc_in_first}">
+			<span>－</span>
+			<input type="text" name="in_second" disabled th:value="${s_culc_in_second}" >
+			<span>=</span>
+			<input type="text" name="out" th:value="${s_culc_out}">
+		</div>
+		<div class="result">
+			<input type="text" name="in_first" disabled th:value="${m_culc_in_first}">
+			<span>×</span>
+			<input type="text" name="in_second" disabled th:value="${m_culc_in_second}" >
+			<span>=</span>
+			<input type="text" name="out" th:value="${m_culc_out}">
+		</div>
+		<div class="result">
+			<input type="text" name="in_first" disabled th:value="${d_culc_in_first}">
+			<span>÷</span>
+			<input type="text" name="in_second" disabled th:value="${d_culc_in_second}" >
+			<span>=</span>
+			<input type="text" name="out" th:value="${d_culc_out}">
+		</div>
+		<div>
+			<a href="/" >戻る
+		</div>
+			
+
+	</div>
+</body>
+</html>
